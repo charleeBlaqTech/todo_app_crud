@@ -1,0 +1,28 @@
+
+<div class="parent">
+    
+        <div class="top">
+            To-Do List
+        </div>
+   
+   <div class="todo-body">
+        {{#each allTodos}}
+        <form action="/delete-Todo" method="post">
+            <div class="tododiv">
+                <input type="checkbox"  name="checkbox" value="" id="" class="check">
+                <label>{{text}}</label>
+                <div class="button"><a href="/delete-Todo/{{_id}}"><span style="color: red">&times;</span></a></div>
+            </div>
+        </form>
+        {{/each}}
+
+       
+        <form action="/" method="post">
+            <input type="text"  name="title" placeholder="type in a new task!" class="ibox">
+            <button type="submit">
+                    + 
+             </button>
+         </form>
+
+    </div>
+</div>
