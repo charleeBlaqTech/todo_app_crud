@@ -4,9 +4,7 @@
   "description": "",
   "main": "todo.js",
   "scripts": {
-    "start": "node todo.js"
-  },
-  "scripts": {
+    "start": "node todo.js",
     "engine": "node todo.js"
   },
   "author": "charleeblaq",
