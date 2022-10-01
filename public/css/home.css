@@ -107,23 +107,23 @@ button {
 @media only screen and (max-width:500px){
 
     .parent{
-        width:400px;
+        max-width:320px;
         height:fit-content;
         margin: auto;
     }
     .todo-body{
-        width: 100%;
+        width: 80%;
         height: 100%;
         margin: auto;
     }
     .tododiv .button{
-        height: 25px;
-        width: 25px;
+        height: 20px;
+        width: 20px;
     }
     .top{
-        width: 100%;
+        width: 80%;
     }
     form{
-        width: 100%;
+        width: 80%;
     }
 }
