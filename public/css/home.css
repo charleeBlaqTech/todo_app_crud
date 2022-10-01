@@ -116,4 +116,8 @@ button {
         height: 100%;
         margin: auto;
     }
+    .tododiv .button{
+        height: 25px;
+        width: 25px;
+    }
 }
