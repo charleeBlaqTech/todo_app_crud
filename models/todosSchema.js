@@ -2,9 +2,7 @@ const mongoose=require('mongoose')
 const Schema= mongoose.Schema
 
 const todosSchema= new Schema({
-    text:String,
-    required:true
-    
+    text:String 
 })
 
 const todosModel=new mongoose.model('todo', todosSchema);
