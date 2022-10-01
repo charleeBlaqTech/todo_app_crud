@@ -105,6 +105,9 @@ button {
 }
 
 @media only screen and (max-width:500px){
+    body{
+        width: 500px;
+    }
 
     .parent{
         max-width:320px;
@@ -125,5 +128,13 @@ button {
     }
     form{
         width: 80%;
+        margin: auto;
+    }
+    .tododiv{
+        width: 100%;
+    }
+    .ibox{
+        width: 190px;
+        height: 22px;
     }
 }
