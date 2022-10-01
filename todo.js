@@ -1,16 +1,11 @@
 const express=require('express')
-const fs=require('fs')
 const mongoose=require('mongoose')
 const homeRouterRoutes=require('./routes/homeRoutes')
 const exphbs=require('express-handlebars');
 const dotenv=require('dotenv');
 dotenv.config()
 
-mongoose.connect(process.env.mongoose_CONNECT).then(()=>{
-    console.log('DB CONNECTED SUCCESSFULLY')
-}).catch((err)=>{
-    console.log('error')
-})
+mongoose.connect("mongodb+srv://charleeblaq:charleeblaq1994@cluster0.nh33n48.mongodb.net/my_todo_appDB")
 
 const app=express()
 app.use(express.json())

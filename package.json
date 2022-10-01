@@ -2,9 +2,9 @@
   "name": "todo",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "todo.js",
   "scripts": {
-    "start": "node todo.js"
+    "engine": "node todo.js"
   },
   "author": "charleeblaq",
   "license": "ISC"
