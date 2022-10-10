@@ -2,7 +2,7 @@ const express=require('express')
 const mongoose=require('mongoose')
 const homeRouterRoutes=require('./routes/homeRoutes')
 const exphbs=require('express-handlebars');
-mongoose.connect("mongodb+srv://charleeblaq:charleeblaq1994@cluster0.nh33n48.mongodb.net/my_todo_appDB")
+mongoose.connect("mongodb+srv://charleeblaq:@cluster0.nh33n48.mongodb.net/my_todo_appDB")
 
 const app=express()
 app.use(express.json())
