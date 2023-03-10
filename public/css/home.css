@@ -29,7 +29,6 @@ body {
 
 .todo-body {
     width: 490px;
-    /* height: 75px; */
     margin-left: auto;
     margin-right: auto;
     font-size: xx-large;
@@ -47,19 +46,38 @@ body {
     align-items: center;
     justify-content: space-between;
     column-gap: 15px;
-    padding-left: 10px;
+    padding-left: 5px;
     padding-right: 5px;
     background-color: white;
     padding-top: 5px;
     padding-bottom: 5px;
 }
+.tododiv label{
+    flex-basis: 80%;
+    font-size: 20px;
+    text-align: left;
+}
+.check {
+    flex-basis: 8%;
+    min-height: 25px;
+    min-width: 25px;
+}
 
 .tododiv .button{
+    flex-basis: 10%;
     width: 50px;
     height: 50px;
-    border-radius: 9px;
+    border-radius: 100%;
     background-color: green;
+    padding: auto;
 }
+.tododiv .button a{
+    width: 80%;
+    height: 80%;
+    color: red;
+    margin-bottom: 30px;
+}
+
 
 
 form {
@@ -70,10 +88,7 @@ form {
     font-size: xx-large;
 }
 
-.check {
-    min-height: 25px;
-    min-width: 25px;
-}
+
 
 .ibox {
     width: 490px;
@@ -82,7 +97,7 @@ form {
     border-bottom-style: solid ;
     border-bottom-color: green ;
     background-color: transparent;
-    font-size: xx-large;
+    font-size: 18px;
     outline-style: none;
     text-align: center;
 }
@@ -119,17 +134,10 @@ button {
         height: 100%;
         margin: auto;
     }
-    .tododiv .button{
-        height: 20px;
-        width: 20px;
-        justify-content: space-around;
-    }
     .top{
         width: 100%;
     }
-    label{
-        width: 100%;
-    }
+   
     form{
         width: 100%;
         margin: auto;
@@ -143,5 +151,20 @@ button {
     .ibox{
         width: 100%;
         height: 40px;
+    }
+
+    .tododiv .button{
+        flex-basis: 10%;
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        background-color: green;
+        padding: auto;
+    }
+    .tododiv .button a{
+        width: 80%;
+        height: 80%;
+        color: red;
+        font-size: 1.7rem;
     }
 }
