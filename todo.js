@@ -5,7 +5,7 @@ const homeRouterRoutes=require('./routes/homeRoutes');
 const exphbs=require('express-handlebars');
 
 
-mongoose.connect(process.env.mongoose_CONNECT)
+mongoose.connect(process.env.MONGO_DB_CONNECT)
 
 const app=express()
 app.use(express.json())
